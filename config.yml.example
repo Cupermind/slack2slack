@@ -1,0 +1,18 @@
+---
+port: 8888
+bridges:
+- name: test
+  enabled: True
+  endpoint: "/test"
+  a:
+    to:
+      url: https://hooks.slack.com/services/XXXX/XXXX
+    from:
+      prefix: "[bridged-from-slack]"
+      token: asdfasdfasdfasdf
+  b:
+    to:
+      url: https://mm.example.com/hooks/asdfasdfasfasdfasdf
+    from:
+      prefix: "[bridged-from-mm]"
+      token: adfasfasfasd
